@@ -1,8 +1,11 @@
 import type { UserConfig } from 'vite';
-
+import WindiCSS from 'vite-plugin-windicss'
 const config: UserConfig = {};
 
 export default {
+   plugins: [
+    WindiCSS(),
+  ],
   ...config,
   optimizeDeps: {
     include: [
