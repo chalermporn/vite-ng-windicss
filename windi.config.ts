@@ -1,3 +1,5 @@
 export default {
-  attributify: true,
+  attributify: {
+    prefix: 'w:',
+  },
 }
