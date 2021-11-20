@@ -14,6 +14,7 @@ specifiers:
   '@angular/router': ~12.2.13
   '@types/jasmine': ~3.8.2
   '@types/node': ^12.20.37
+  concurrently: ^6.4.0
   jasmine-core: ~3.8.0
   karma: ~6.3.9
   karma-chrome-launcher: ~3.1.0
@@ -23,6 +24,7 @@ specifiers:
   rxjs: ~6.6.7
   tslib: ^2.3.1
   typescript: ~4.3.5
+  vite: ^2.6.14
   zone.js: ~0.11.4
 
 dependencies:
@@ -44,6 +46,7 @@ devDependencies:
   '@angular/compiler-cli': 12.2.13_aac1e49e6604a7b98f0db78ff98dd5d4
   '@types/jasmine': 3.8.2
   '@types/node': 12.20.37
+  concurrently: 6.4.0
   jasmine-core: 3.8.0
   karma: 6.3.9
   karma-chrome-launcher: 3.1.0
@@ -51,6 +54,7 @@ devDependencies:
   karma-jasmine: 4.0.1_karma@6.3.9
   karma-jasmine-html-reporter: 1.7.0_45b574f0300408208347550a7009d474
   typescript: 4.3.5
+  vite: 2.6.14
 
 packages:
 
@@ -2772,6 +2776,21 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
 
+  /concurrently/6.4.0:
+    resolution: {integrity: sha512-HZ3D0RTQMH3oS4gvtYj1P+NBc6PzE2McEra6yEFcQKrUQ9HvtTGU4Dbne083F034p+LRb7kWU0tPRNvSGs1UCQ==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    dependencies:
+      chalk: 4.1.2
+      date-fns: 2.26.0
+      lodash: 4.17.21
+      rxjs: 6.6.7
+      spawn-command: 0.0.2-1
+      supports-color: 8.1.1
+      tree-kill: 1.2.2
+      yargs: 16.2.0
+    dev: true
+
   /connect-history-api-fallback/1.6.0:
     resolution: {integrity: sha512-e54B99q/OUoH64zYYRf3HBP5z24G38h5D3qXu23JGRoigpX5Ss4r9ZnDk3g0Z8uQC2x2lPaJ+UlWBc1ZWBWdLg==}
     engines: {node: '>=0.8'}
@@ -3116,6 +3135,11 @@ packages:
     engines: {node: '>=0.10'}
     dependencies:
       assert-plus: 1.0.0
+    dev: true
+
+  /date-fns/2.26.0:
+    resolution: {integrity: sha512-VQI812dRi3cusdY/fhoBKvc6l2W8BPWU1FNVnFH9Nttjx4AFBRzfSVb/Eyc7jBT6e9sg1XtAGsYpBQ6c/jygbg==}
+    engines: {node: '>=0.11'}
     dev: true
 
   /date-format/2.1.0:
@@ -3625,7 +3649,6 @@ packages:
       esbuild-windows-64: 0.13.8
       esbuild-windows-arm64: 0.13.8
     dev: true
-    optional: true
 
   /escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
@@ -7170,6 +7193,14 @@ packages:
       glob: 7.2.0
     dev: true
 
+  /rollup/2.60.0:
+    resolution: {integrity: sha512-cHdv9GWd58v58rdseC8e8XIaPUo8a9cgZpnCMMDGZFDZKEODOiPPEQFXLriWr/TjXzhPPmG5bkAztPsOARIcGQ==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /run-async/2.4.1:
     resolution: {integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==}
     engines: {node: '>=0.12.0'}
@@ -7566,6 +7597,10 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    dev: true
+
+  /spawn-command/0.0.2-1:
+    resolution: {integrity: sha1-YvXpRmmBwbeW3Fkpk34RycaSG9A=}
     dev: true
 
   /spdy-transport/3.0.0_supports-color@6.1.0:
@@ -8128,6 +8163,30 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
+  /vite/2.6.14:
+    resolution: {integrity: sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==}
+    engines: {node: '>=12.2.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+    dependencies:
+      esbuild: 0.13.8
+      postcss: 8.3.11
+      resolve: 1.20.0
+      rollup: 2.60.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /void-elements/2.0.1:
     resolution: {integrity: sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=}
     engines: {node: '>=0.10.0'}
@@ -8343,7 +8402,7 @@ packages:
   /wide-align/1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
     dev: true
 
   /wildcard/2.0.0:
