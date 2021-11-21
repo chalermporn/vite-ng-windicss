@@ -5,8 +5,8 @@
     "ngcnc": "ngcc --tsconfig ./tsconfig.app.json && ngc --project tsconfig.app.json",
     "watch-ngc": "ngc --project tsconfig.app.json --watch",
     "watch-vite": "vite serve",
-    "start": "yarn ngcnc && concurrently 'npm:watch-ngc' 'npm:watch-vite'",
-    "build": "yarn ngcnc && vite build",
+    "start": "npm ngcnc && concurrently 'npm:watch-ngc' 'npm:watch-vite'",
+    "build": "npm ngcnc && vite build",
     "test": "ng test"
   },
   "private": true,
