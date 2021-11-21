@@ -1,5 +1,10 @@
 
 
+#app-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 svg.material-icons {
   height: 24px;
   width: auto;
