@@ -2,6 +2,11 @@
 
 referance by [xiaoxiangmoe/vite-ng-app-demo](https://github.com/xiaoxiangmoe/vite-ng-app-demo)
 
+## Logs
+
+- Upgrade angular@13.0.3
+- Change Package Manager from yarn to pnpm
+
 ## Commard Line
 
 usage:
