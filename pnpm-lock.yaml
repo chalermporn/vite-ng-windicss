@@ -491,7 +491,7 @@ packages:
       '@babel/traverse': 7.16.3
       '@babel/types': 7.16.0
       convert-source-map: 1.8.0
-      debug: 4.3.2
+      debug: 4.3.3
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       semver: 6.3.0
@@ -514,7 +514,7 @@ packages:
       '@babel/traverse': 7.16.3
       '@babel/types': 7.16.0
       convert-source-map: 1.8.0
-      debug: 4.3.2
+      debug: 4.3.3
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       semver: 6.3.0
@@ -627,7 +627,7 @@ packages:
       '@babel/helper-module-imports': 7.16.0
       '@babel/helper-plugin-utils': 7.14.5
       '@babel/traverse': 7.16.3
-      debug: 4.3.2
+      debug: 4.3.3
       lodash.debounce: 4.0.8
       resolve: 1.20.0
       semver: 6.3.0
@@ -1750,7 +1750,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.16.0
       '@babel/parser': 7.16.4
       '@babel/types': 7.16.0
-      debug: 4.3.2
+      debug: 4.3.3
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -2396,7 +2396,7 @@ packages:
   /@windicss/config/1.5.1:
     resolution: {integrity: sha512-nWNgvvJj9RcYhLcqwju/Z8FfaHRjyWHDYS3IgY7lWUM+vWTLFuKqhavKfC1589kdYjiO9JeX07Vg+YzfcxP0Yw==}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       jiti: 1.12.9
       windicss: 3.2.1
     transitivePeerDependencies:
@@ -2408,7 +2408,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.3.0
       '@windicss/config': 1.5.1
-      debug: 4.3.2
+      debug: 4.3.3
       fast-glob: 3.2.7
       magic-string: 0.25.7
       micromatch: 4.0.4
@@ -2489,7 +2489,7 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3462,6 +3462,18 @@ packages:
 
   /debug/4.3.2:
     resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: true
+
+  /debug/4.3.3:
+    resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -4590,8 +4602,8 @@ packages:
       toidentifier: 1.0.0
     dev: true
 
-  /http-parser-js/0.5.4:
-    resolution: {integrity: sha512-Qn1yyi10ipcylSSqlTFsj7bhimACWbFm5w5JNMxhLKfcJAeWFBc+/VBv4mu5qlWSKr0cjXqtwM6HISZkESUILA==}
+  /http-parser-js/0.5.5:
+    resolution: {integrity: sha512-x+JVEkO2PoM8qqpbPbOL3cqHPwerep7OwzK7Ay+sMQjKzaKCqWvjoXm5tqMP9tXWWTnTzAjIhXg+J99XYuPhPA==}
     dev: true
 
   /http-proxy-agent/4.0.1:
@@ -4634,7 +4646,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.2
+      debug: 4.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5089,7 +5101,7 @@ packages:
     resolution: {integrity: sha512-n3s8EwkdFIJCG3BPKBYvskgXGoy88ARzvegkitk60NxRdwltLOTaH7CUiMRXvwYorl0Q712iEjcWB+fK/MrWVw==}
     engines: {node: '>=10'}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       istanbul-lib-coverage: 3.2.0
       source-map: 0.6.1
     transitivePeerDependencies:
@@ -7716,7 +7728,7 @@ packages:
   /spdy-transport/3.0.0:
     resolution: {integrity: sha512-hsLVFE5SjA6TCisWeJXFKniGGOpBgMLmerfO2aCyCU5s7nJ/rpAepqmFifv/GCbSbueEeAJJnmSQ2rKC/g8Fcw==}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       detect-node: 2.1.0
       hpack.js: 2.1.6
       obuf: 1.1.2
@@ -7730,7 +7742,7 @@ packages:
     resolution: {integrity: sha512-r46gZQZQV+Kl9oItvl1JZZqJKGr+oEkB08A6BzkiR7593/7IbtuncXHd2YoYeTsG4157ZssMu9KYvUHLcjcDoA==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       handle-thing: 2.0.1
       http-deceiver: 1.2.7
       select-hose: 2.0.0
@@ -8236,7 +8248,7 @@ packages:
     dependencies:
       '@windicss/plugin-utils': 1.5.1
       chalk: 4.1.2
-      debug: 4.3.2
+      debug: 4.3.3
       vite: 2.6.14
       windicss: 3.2.1
     transitivePeerDependencies:
@@ -8444,7 +8456,7 @@ packages:
     resolution: {integrity: sha512-b17KeDIQVjvb0ssuSDF2cYXSg2iztliJ4B9WdsuB6J952qCPKmnVq4DyW5motImXHDC1cBT/1UezrJVsKw5zjg==}
     engines: {node: '>=0.8.0'}
     dependencies:
-      http-parser-js: 0.5.4
+      http-parser-js: 0.5.5
       safe-buffer: 5.2.1
       websocket-extensions: 0.1.4
     dev: true
