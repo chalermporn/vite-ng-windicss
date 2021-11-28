@@ -37,4 +37,7 @@ export default defineConfig({
       '.git/**/*',
     ],
   },
+  plugins: [
+    require('windicss/plugin/forms'),
+  ],
 })
