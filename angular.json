@@ -99,5 +99,9 @@
       }
     }
   },
+  "cli": {
+    "analytics": false,
+    "packageManager": "pnpm"
+  },
   "defaultProject": "vite-ng-windicss"
 }
