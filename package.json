@@ -1,6 +1,6 @@
 {
   "name": "vite-ng-windicss",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ngcnc": "ngcc --tsconfig ./tsconfig.app.json && ngc --project tsconfig.app.json",
     "watch-ngc": "ngc --project tsconfig.app.json --watch",
